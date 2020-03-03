@@ -5,7 +5,7 @@
 - The V-REP ROS bridge used here has been developed by the Inria Lagadic team. You can go to the following link to access the repository for this plugin [V-Rep ROS Bridge](https://github.com/lagadic/vrep_ros_bridge), if you want to take a look for yourself.
 - First you will need to install ROS on your system. You can install ROS Kinetic [here](http://wiki.ros.org/kinetic/Installation/Ubuntu)
 - This plugin supports only prior versions of CoppeliaSim (i.e. V-REP versions 3.6.2 and earlier). So, you must use the V-REP version provided here, as there some changes made to the install files also to make it run with the bridge.
-- Clone this repository into the `/src` folder of your catkin_ws and delete the `build` and `devel` folders of your catkin workspace. Move the V-REP folder to your `home` folder in your system.
+- Clone this repository into the `/src` folder of your catkin_ws and delete the `build` and `devel` folders of your catkin workspace. Move the V-REP folder to your `home` folder in your system. Change the name of the `vrep_ros` folder to `vrep_ros_bridge`
 - Now run `catkin_make`. After this, build the packagae again using the following command:
 `catkin_make --pkg vrep_ros_bridge --cmake-args -DCMAKE_BUILD_TYPE=RelWithDebInfo`
 - Open the file bashrc: `gedit ~/.bashrc` in the end of the file add:
